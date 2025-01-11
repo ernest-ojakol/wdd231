@@ -1,0 +1,371 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', serif;
+    background-color: #f9f9f9;
+    color: #6a4141;
+}
+
+header {
+    display: flex;
+    background-color: #22125e;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:10px;
+}
+
+header img{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+header h1{
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    /* grid-column: auto; */
+    background-color: #f3e9f2;
+    padding: 2px;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* display: grid;
+    grid-template-columns: 3fr 1fr; */
+    /* align-items: center; */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #39006fa5;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.card ul {
+    list-style: none;
+    /* padding: 0;*/
+    margin: 100px;
+    text-align: center;
+}
+
+.card li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    width: fit-content;
+}
+
+footer {
+    background-color: #360e33;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+footer img {
+    height: 15px;
+    background-color: #8B0000;
+}
+
+nav {
+    background-color: #eedffc;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 20px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #43494f;
+    border-top: 2px solid #333;
+}
+
+nav a.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+nav.active{
+    display: block;
+}
+
+.resources {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources img{
+    width: 500px;
+    height: auto;
+}
+
+.resources ul {
+    list-style: none;
+    margin: 100px;
+    text-align: center;
+}
+
+.resources li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    width: fit-content;
+}
+
+.resources a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+
+.resources a:hover {
+    color: #23527c;
+}
+
+.resources h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #6f0062;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.coursecards {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+aside ul {
+    margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+section.courses-card {
+    grid-area: courses-card;
+    grid-column: 1 / 3;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+aside.aside-card {
+    background: rgb(245, 220, 234);
+    transition: all 0.3s ease-in-out;
+}
+
+aside.aside-card ul li {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+aside.aside-card h2 {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+aside.aside-card a {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.courses-card ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.courses-card ul li {
+    flex: 1 1 calc(33.333% - 3rem);
+    background: rgb(255, 192, 192);
+    border: rgb(210, 202, 191);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.courses-card ul li a:hover,
+.courses-card .course ul li a:hover {
+    color: #9f9f9f;
+}
+
+.courses-card aside.card>ul li:nth-child(-n+3) a {
+    background-color: rgb(155, 248, 255);
+    color: rgba(171, 255, 220, 0.664);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.courses-card ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #eedffc;
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: block;
+        width: 100%;
+    }
+
+    .card,
+    .resources,
+    .courses-card {
+        margin: 20px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .card h2,
+    .resources h2,
+    .courses-card h2 {
+        font-size: 1.25rem;
+        padding: 10px;
+    }
+
+    .card ul,
+    .resources ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card li,
+    .resources li {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .courses-card ul {
+        flex-direction: column;
+    }
+
+    .total-credits {
+        font-size: 1rem;
+    }
+
+    .course{
+        padding: 0;
+    }
+
+    .aside-card {
+        width: 100%;
+    }
+
+    #all-courses,
+    #cse-courses,
+    #wdd-courses {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #course-list {
+        padding: 0;
+        list-style: none;
+    }
+
+    .total-credits {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .resources{
+        order:2;
+    }
+
+    .card {
+        order: 1;
+    }
+}
