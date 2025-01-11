@@ -4,7 +4,7 @@ body {
     grid-template-columns: 1fr;
     height: 100vh;
     margin: 0;
-    font-family: 'Open Sans', serif;
+    font-family: "Roboto", serif;
     background-color: #f9f9f9;
     color: #6a4141;
 }
