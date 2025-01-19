@@ -4,7 +4,7 @@
     "address": "123 Main St, Accra",
     "phone": "0123 456789",
     "website": "http://www.innovatek.com",
-    "image": "/chamber/images/logo1.png",
+    "image": "images/logo1.png",
     "membershipLevel": 1,
     "additionalInfo": "This is a basic member."
   },
@@ -13,7 +13,7 @@
     "address": "456 Oak Rd, Tema",
     "phone": "0987 654321",
     "website": "http://www.silverlinetech.com",
-    "image": "/chamber/images/logo2.png",
+    "image": "images/logo2.png",
     "membershipLevel": 2,
     "additionalInfo": "This is a silver member."
   },
@@ -22,7 +22,7 @@
     "address": "789 Pine Ave, Kumasi",
     "phone": "0145 678901",
     "website": "http://www.goldstream.com",
-    "image": "/chamber/images/logo3.png",
+    "image": "images/logo3.png",
     "membershipLevel": 3,
     "additionalInfo": "This is a gold member."
   },
@@ -31,7 +31,7 @@
     "address": "234 Birch Ln, Accra",
     "phone": "0567 123456",
     "website": "http://www.birchwoodind.com",
-    "image": "/chamber/images/logo4.png",
+    "image": "images/logo4.png",
     "membershipLevel": 2,
     "additionalInfo": "This is a silver member."
   },
@@ -40,7 +40,7 @@
     "address": "876 Cedar Dr, Takoradi",
     "phone": "0456 789012",
     "website": "http://www.cedartech.com",
-    "image": "/chamber/images/logo5.png",
+    "image": "images/logo5.png",
     "membershipLevel": 3,
     "additionalInfo": "This is a gold member."
   },
@@ -49,7 +49,7 @@
     "address": "567 Elm St, Ho",
     "phone": "0678 123789",
     "website": "http://www.elmwooddigital.com",
-    "image": "/chamber/images/logo6.png",
+    "image": "images/logo6.png",
     "membershipLevel": 1,
     "additionalInfo": "This is a basic member."
   },
@@ -58,7 +58,7 @@
     "address": "910 Maple Rd, Accra",
     "phone": "0890 456123",
     "website": "http://www.mapleinnovations.com",
-    "image": "/chamber/images/logo7.png",
+    "image": "images/logo7.png",
     "membershipLevel": 3,
     "additionalInfo": "This is a gold member."
   }
