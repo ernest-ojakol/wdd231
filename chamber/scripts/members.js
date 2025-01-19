@@ -3,7 +3,7 @@ let companies = [];  // Declare a global variable to hold the companies data
 // Function to fetch companies from the member.json file
 async function fetchCompanies() {
     try {
-        const response = await fetch('/data/members.json');  // Use relative path to the JSON file
+        const response = await fetch('data/members.json');  // Use relative path to the JSON file
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
