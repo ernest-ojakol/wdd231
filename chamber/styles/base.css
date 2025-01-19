@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #00254d;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a.active {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#hero {
+    position: relative;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+#hero button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #0056b3;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.events_card,
+.weather_card,
+.forecast_card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer_address,
+.footer_socials,
+.footer_class {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer_socials a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer_socials img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer_socials img:hover {
+    transform: scale(1.1);
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.list-view {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.member-card h2 {
+    margin: 10px 0;
+}
+
+.toggle-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.company-logo{
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.toggle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button {
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #hero {
+        height: 300px;
+    }
+
+    #hero button {
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events_card,
+    .weather_card,
+    .forecast_card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_address,
+    .footer_socials,
+    .footer_class {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer_socials a {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    #hero {
+        height: 250px;
+    }
+
+    #hero button {
+        bottom: 5px;
+        left: 5px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
