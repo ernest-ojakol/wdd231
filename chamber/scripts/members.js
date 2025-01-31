@@ -13,10 +13,10 @@ async function fetchCompanies() {
     }
 }
 
-const footerParagraphs = document.querySelectorAll('footer div p');
-const currentYear = new Date().getFullYear();
-footerParagraphs[0].innerText = `${currentYear} Ernest Ojakol - Kampala, Uganda`;
-footerParagraphs[1].innerText = `Last modified: ${document.lastModified}`;
+// const footerParagraphs = document.querySelectorAll('footer div p');
+// const currentYear = new Date().getFullYear();
+// footerParagraphs[0].innerText = `${currentYear} Ernest Ojakol - Kampala, Uganda`;
+// footerParagraphs[1].innerText = `Last modified: ${document.lastModified}`;
 
 function displayCompanies(viewType) {
     const container = document.getElementById("members-container");

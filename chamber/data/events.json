@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "title": "Networking Breakfast",
+      "date": "2025-02-10",
+      "time": "08:00 AM",
+      "location": "Chamber of Commerce Office"
+    },
+    {
+      "title": "Annual Business Awards Gala",
+      "date": "2025-03-25",
+      "time": "06:00 PM",
+      "location": "Downtown Hotel Ballroom"
+    },
+    {
+      "title": "Small Business Workshop",
+      "date": "2025-04-15",
+      "time": "01:00 PM",
+      "location": "Chamber of Commerce Office"
+    },
+    {
+      "title": "Community Health Fair",
+      "date": "2025-05-05",
+      "time": "10:00 AM",
+      "location": "City Park"
+    }
+  ]
+}
