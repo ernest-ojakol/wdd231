@@ -20,7 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <script defer src="scripts/members.js"></script>
+    <script defer src="scripts/thankyou.js"></script>
 </head>
 
 <body>
@@ -35,10 +35,34 @@
         </nav>
     </header>
     <main>
-        <section class="directory_cards">
-            <button class="toggle-button" id="toggleButton">Switch to Grid View</button>
-            <div id="members-container" class="list-view"></div>
-        </section>
+        <div class="thank-you-container">
+            <header>
+                <h1>Thank You for Your Submission!</h1>
+                <p>We appreciate you taking the time to fill out the membership application form. Here is a summary of your
+                    information:</p>
+            </header>
+        
+            <section class="submitted-info">
+                <div class="info-item">
+                    <strong>First Name:</strong> <span id="first-name"></span>
+                </div>
+                <div class="info-item">
+                    <strong>Last Name:</strong> <span id="last-name"></span>
+                </div>
+                <div class="info-item">
+                    <strong>Email Address:</strong> <span id="email"></span>
+                </div>
+                <div class="info-item">
+                    <strong>Mobile Phone:</strong> <span id="mobile"></span>
+                </div>
+                <div class="info-item">
+                    <strong>Organization Name:</strong> <span id="organization-name"></span>
+                </div>
+                <div class="info-item">
+                    <strong>Submission Date:</strong> <span id="timestamp"></span>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer_address">

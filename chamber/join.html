@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ghana Chamber of Commerce and Industry</title>
+    <meta name="description" content="Ghana Chamber of Commerce Directory">
+    <meta name="author" content="Ernest Ojakol">
+    <meta property="og:title" content="Ghana Chamber of Commerce">
+    <meta property="og:description" content="Ghana Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://maps.prodafrica.com/wp-content/uploads/2020/09/11478_GNCCI_002.jpg">
+    <meta property="og:url" content="https://ernest-ojakol.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/gcci.jpg" alt="GCCI Logo">
+        <h1>Ghana Chamber of Commerce and Industry</h1>
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#" target="_blank">Join</a>
+            <a href="#" target="_blank">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="thankyou.html" method="get" class="membership-form">
+                <fieldset>
+                    <legend>Membership Application Form</legend>
+        
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+        
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+        
+                    <label for="organization-title">Organizational Title:</label>
+                    <input type="text" id="organization-title" name="organization-title" pattern="^[A-Za-z\s-]+$"
+                        title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."
+                        autocomplete="organization-title" required>
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="example@example.com" required>
+        
+                    <label for="mobile">Mobile Phone:</label>
+                    <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
+        
+                    <label for="organization-name">Organization Name:</label>
+                    <input type="text" id="organization-name" name="organization-name" autocomplete="organization" required>
+        
+                    <label for="membership-level">Membership Level:</label>
+                    <select id="membership-level" name="membership-level" required>
+                        <option value="NP">NP Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description"
+                        title="Provide a description of your business or organization." required></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="" />
+                    <input type="submit" value="Submit Application">
+                </fieldset>
+            </form>
+        
+            <!-- Membership Level Cards -->
+            <div class="membership-cards">
+                <div class="card" id="np-card">
+                    <h3>NP Membership</h3>
+                    <p>No fee for non-profit organizations.</p>
+                    <button data-modal="np-modal">Learn More</button>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic membership with limited benefits.</p>
+                    <button data-modal="bronze-modal">Learn More</button>
+                </div>
+                <div class="card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits and event discounts.</p>
+                    <button data-modal="silver-modal">Learn More</button>
+                </div>
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits including spotlight positions.</p>
+                    <button data-modal="gold-modal">Learn More</button>
+                </div>
+            </div>
+        
+            <!-- Modals for Membership Levels -->
+            <div class="modal" id="np-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="np-modal">&times;</span>
+                    <h2>NP Membership Benefits</h2>
+                    <ul>
+                        <li>No fee</li>
+                        <li>Access to non-profit resources</li>
+                        <li>Networking opportunities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="bronze-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="bronze-modal">&times;</span>
+                    <h2>Bronze Membership Benefits</h2>
+                    <ul>
+                        <li>Basic access to events</li>
+                        <li>Access to training materials</li>
+                        <li>Event discounts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="silver-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="silver-modal">&times;</span>
+                    <h2>Silver Membership Benefits</h2>
+                    <ul>
+                        <li>Event discounts</li>
+                        <li>Advertising opportunities</li>
+                        <li>Special member events</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="gold-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="gold-modal">&times;</span>
+                    <h2>Gold Membership Benefits</h2>
+                    <ul>
+                        <li>All benefits of Silver Membership</li>
+                        <li>Spotlight position on homepage</li>
+                        <li>Exclusive access to premium events</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="footer_address">
+            Address: Plot 21 Tufnell Dr, Accra<br>
+            Hours: Mon - Fri 8am to 5pm<br>
+            Phone: 0753 503035<br>
+        </div>
+        <!-- <div class="footer_socials">
+            <a><img scr="/chamber/images/facebook-app-symbol.jpg" alt="facebook"></a>
+            <a><img scr="images/linkedin.jpg" alt="linkedin"></a>
+            <a><img scr="images/twitter.jpg" alt="twitter"></a>
+        </div> -->
+        <div class="footer_class">
+            WDD231<br>
+            BYU Pathway Worldwide<br>
+            <p></p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+
+</html>
