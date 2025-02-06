@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #1C1C1C;
+    /* Dark background */
+    color: #FFF;
+}
+
+h1 {
+    color: #FF0000;
+    /* Red */
+}
+
+h2 {
+    color: #FFB81C;
+    /* Yellow */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+.color-schema {
+    margin-top: 10px;
+}
+
+.wireframe {
+    margin-top: 40px;
+}
+
+.wireframe img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
