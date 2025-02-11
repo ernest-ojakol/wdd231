@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Black Star Square",
+        "address": "Accra, Ghana",
+        "image": "images/black-star.webp",
+        "description": "Black Star Square is an iconic landmark in Accra, known for its historical significance and as a venue for national celebrations and events."
+    },
+    {
+        "name": "Accra Mall",
+        "address": "Tetteh Quarshie Interchange, Accra, Ghana",
+        "image": "images/accra-mall.webp",
+        "description": "Accra Mall is the largest shopping center in Ghana, offering a range of retail outlets, restaurants, and entertainment options."
+    },
+    {
+        "name": "Cape Coast Castle",
+        "address": "Cape Coast, Ghana",
+        "image": "images/cape-coast-castle.webp",
+        "description": "Cape Coast Castle is a UNESCO World Heritage site with deep historical significance, especially in the transatlantic slave trade."
+    },
+    {
+        "name": "Kumasi City",
+        "address": "Kumasi, Ashanti Region, Ghana",
+        "image": "images/kumasi.webp",
+        "description": "Kumasi is the capital city of the Ashanti Region, known for its rich cultural heritage, historical landmarks, and the Kumasi Fort."
+    },
+    {
+        "name": "Takoradi",
+        "address": "Takoradi, Western Region, Ghana",
+        "image": "images/takoradi.webp",
+        "description": "Takoradi is a coastal city with beautiful beaches, markets, and a bustling port, perfect for experiencing the lively atmosphere of the Western Region."
+    },
+    {
+        "name": "Wli Waterfalls",
+        "address": "Wli, Volta Region, Ghana",
+        "image": "images/wli-falls.webp",
+        "description": "Wli Waterfalls is the highest waterfall in Ghana, located in the Volta Region. It's a popular destination for nature lovers and hiking enthusiasts."
+    },
+    {
+        "name": "Boti Falls",
+        "address": "Boti, Eastern Region, Ghana",
+        "image": "images/boti-falls.webp",
+        "description": "Boti Falls, located in the Eastern Region, offers stunning views, with two separate waterfalls and a peaceful environment for relaxation."
+    },
+    {
+        "name": "Shai Hills Reserve",
+        "address": "Shai Hills, Greater Accra Region, Ghana",
+        "image": "images/shai-hills.webp",
+        "description": "Shai Hills Reserve is a wildlife conservation area near Accra. It is home to various animal species, including baboons and antelopes, and offers scenic hiking trails."
+    }
+]

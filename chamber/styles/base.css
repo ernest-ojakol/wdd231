@@ -343,6 +343,104 @@ strong {
     color: #333;
 }
 
+.discover_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.discover-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.discover-card:hover {
+    transform: scale(1.05);
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.discover-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.discover-card address {
+    font-style: normal;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.discover-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.discover-card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.discover-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar for visitor info */
+.visitor-info {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 100;
+}
+
+.visitor-message {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dismiss-message {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dismiss-message:hover {
+    background-color: #0056b3;
+}
+
 @media (max-width: 768px) {
     header {
         padding: 15px;
@@ -425,6 +523,10 @@ strong {
         align-items: center;
     }
 
+    .discover_cards {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -455,5 +557,8 @@ strong {
         padding: 6px 12px;
     }
 
-}
+    .discover_cards {
+        grid-template-columns: 1fr;
+    }
 
+}
