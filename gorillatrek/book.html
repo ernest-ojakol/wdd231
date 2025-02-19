@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Gorilla Trekking Uganda | Booking</title>
+    <meta name="description" content="Gorilla Trekking Uganda">
+    <meta name="author" content="Ernest Ojakol">
+    <meta property="og:title" content="Gorilla Trekking Uganda">
+    <meta property="og:description" content="Gorilla Trekking Uganda - Booking Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.vectorstock.com/i/2000v/34/85/angry-gorilla-jumping-black-and-white-vector-53423485.avif">
+    <meta property="og:url" content="https://ernest-ojakol.github.io/wdd231/gorillatrek/book.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="scripts/book.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/gtu.jpg" alt="Gorilla Trekking Uganda">
+        <h1>Gorilla Trekking Uganda</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="book.html">Book</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="thankyou.html" method="get" class="booking-form">
+                <fieldset>
+                    <legend>Book a Tour Form</legend>
+        
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+        
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="example@example.com" required>
+        
+                    <label for="mobile">Mobile Phone:</label>
+                    <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
+                
+                    <label for="participants">Number of Participants:</label>
+                    <select id="participants" name="participants" required>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="Greater than 3">More Than Three</option>
+                    </select>
+
+                    <label for="description">More Details on desired Trekking experience:</label>
+                    <textarea id="description" name="description"
+                        title="Provide a more detailed description of desired trekking experience." required></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="" />
+                    <input type="submit" value="Book">
+                </fieldset>
+            </form>
+        
+            <div class="booking-cards">
+                <div class="card" id="np-card">
+                    <h3>1 Person Trek</h3>
+                    <p>Personalized</p>
+                    <button data-modal="np-modal">Learn More</button>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h3>2 People Trek</h3>
+                    <p>Romantic Getaway</p>
+                    <button data-modal="bronze-modal">Learn More</button>
+                </div>
+                <div class="card" id="silver-card">
+                    <h3>3 People Trek</h3>
+                    <p>Three is not a crowd</p>
+                    <button data-modal="silver-modal">Learn More</button>
+                </div>
+                <div class="card" id="gold-card">
+                    <h3>More than three people</h3>
+                    <p>Cost Effective</p>
+                    <button data-modal="gold-modal">Learn More</button>
+                </div>
+            </div>
+        
+            <!-- Modals for Membership Levels -->
+            <div class="modal" id="np-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="np-modal">&times;</span>
+                    <h2>1 Person Trek</h2>
+                    <ul>
+                        <li><strong>Exclusive Experience:</strong> Enjoy a private, one-on-one encounter with the gorillas, allowing for a
+                            deeply personal and uninterrupted interaction.</li>
+                        <li><strong>Customized Itinerary:</strong> Tailor your trek to your pace and interests, with the flexibility to spend
+                            more time observing specific behaviors or taking photographs.</li>
+                        <li><strong>Enhanced Safety:</strong> With just one trekker, your guide can focus entirely on your safety, ensuring a
+                            more secure and attentive trekking experience.</li>
+                        <li><strong>Premium Guide Attention:</strong> Receive undivided attention from your expert guide, who can provide
+                            in-depth knowledge on gorilla behavior, conservation, and local flora and fauna.</li>
+                        <li><strong>Lower Environmental Impact:</strong> A single person trek minimizes the impact on the gorilla habitat,
+                            promoting conservation by reducing human presence.</li>
+                        <li><strong>Intimate Photography Opportunities:</strong> Capture unique, unobstructed photos and videos without other
+                            trekkers in the frame, enhancing your photography portfolio or personal memories.</li>
+                        <li><strong>Quiet Observation:</strong> The absence of group noise allows for a quieter trek, potentially leading to
+                            more natural gorilla behaviors and closer encounters.</li>
+                        <li><strong>Direct Interaction:</strong> With no competition for attention, you can have direct, meaningful interactions
+                            with your guide, asking questions and learning more about gorilla conservation efforts.</li>
+                        <li><strong>Flexibility in Timing:</strong> Easier to schedule at your convenience, possibly allowing for early morning
+                            or late afternoon treks when animal activity might be higher.</li>
+                        <li><strong>Personalized Conservation Contribution:</strong> Your solo trek fee might contribute more directly to
+                            conservation efforts, as the costs are not spread among a larger group.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="bronze-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="bronze-modal">&times;</span>
+                    <h2>2 People Trek</h2>
+                    <ul>
+                        <li><strong>Shared Exclusive Experience:</strong> Enjoy a more intimate experience with just one other person, allowing
+                            for a quieter and more personal interaction with the gorillas.</li>
+                        <li><strong>Customized Experience for Two:</strong> Tailor the trek to suit both participants' interests and pace,
+                            providing flexibility in how you spend your time with the gorillas.</li>
+                        <li><strong>Enhanced Safety and Companionship:</strong> Trekking with a partner provides companionship, making the
+                            experience more enjoyable, while still maintaining a high level of safety due to the small group size.</li>
+                        <li><strong>Quality Guide Interaction:</strong> With only two trekkers, your guide can offer personalized attention,
+                            sharing detailed insights into gorilla behavior, conservation efforts, and the surrounding ecosystem.</li>
+                        <li><strong>Reduced Environmental Impact:</strong> A trek with just two people still minimizes the environmental
+                            footprint, contributing positively to conservation efforts.</li>
+                        <li><strong>Photography Opportunities:</strong> Capture photos and videos with minimal interference, with your companion
+                            possibly helping with shots or posing together in the wild setting.</li>
+                        <li><strong>Quiet Observation:</strong> With fewer people, the trek remains quiet, which can lead to more natural
+                            gorilla behavior and potentially closer encounters.</li>
+                        <li><strong>Shared Learning Experience:</strong> Both participants can engage in direct, meaningful interactions with
+                            the guide, enhancing the educational aspect by discussing and learning together about conservation.</li>
+                        <li><strong>Flexibility in Timing:</strong> Scheduling is easier with just two, allowing for optimal timing based on
+                            your mutual availability, possibly aligning with peak gorilla activity times.</li>
+                        <li><strong>Conservation Contribution:</strong> Your shared trek fee still contributes significantly to gorilla
+                            conservation, with the advantage of sharing the cost while maintaining the exclusivity of the experience.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="silver-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="silver-modal">&times;</span>
+                    <h2>3 People Trek</h2>
+                    <ul>
+                        <li><strong>Small Group Intimacy:</strong> With just three participants, the experience remains intimate, allowing for a
+                            close-knit group dynamic while still offering a personal encounter with the gorillas.</li>
+                        <li><strong>Customized Group Experience:</strong> The trek can be tailored to the interests and physical abilities of
+                            the three participants, ensuring everyone enjoys the experience at their preferred pace.</li>
+                        <li><strong>Enhanced Safety with Companionship:</strong> A group of three provides safety in numbers with the added
+                            benefit of companionship, making the trek more enjoyable and less intimidating.</li>
+                        <li><strong>Personalized Guide Interaction:</strong> Your guide can still offer a high degree of personalized attention,
+                            educating all three of you on gorilla behavior, conservation, and local ecology.</li>
+                        <li><strong>Minimized Environmental Impact:</strong> Even with three people, the trek maintains a low environmental
+                            impact, supporting conservation efforts by limiting human presence in the gorilla habitat.</li>
+                        <li><strong>Collaborative Photography:</strong> With three people, you can take turns capturing photos or videos, or
+                            assist each other in getting the best shots, enhancing the visual documentation of your adventure.</li>
+                        <li><strong>Quiet Observation:</strong> The small group size ensures a quieter trek, which can lead to more natural
+                            interactions with the gorillas and potentially closer encounters.</li>
+                        <li><strong>Shared Learning Journey:</strong> The group can engage in discussions with the guide, enriching the
+                            educational aspect by sharing insights and questions, fostering a collective learning environment.</li>
+                        <li><strong>Flexible Scheduling:</strong> Scheduling for three is still relatively flexible, allowing the group to
+                            choose times that might be optimal for gorilla viewing or align with everyone's availability.</li>
+                        <li><strong>Conservation Contribution:</strong> The cost of the trek for three people is shared, yet each person's
+                            contribution to conservation remains significant, with the added benefit of group camaraderie.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="gold-modal">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="gold-modal">&times;</span>
+                    <h2>3 is not a crowd Benefits</h2>
+                    <ul>
+                        <li><strong>Group Dynamics:</strong> Larger groups offer a vibrant social experience, enhancing camaraderie and shared
+                            excitement during the trek.</li>
+                        <li><strong>Shared Cost Efficiency:</strong> The cost per person can be lower when spread across more participants,
+                            making the experience more affordable for each individual.</li>
+                        <li><strong>Diverse Perspectives:</strong> With more people, you get a variety of perspectives and reactions, enriching
+                            the storytelling and memory-making aspect of the trek.</li>
+                        <li><strong>Enhanced Safety in Numbers:</strong> A larger group provides a sense of security, with more eyes watching
+                            out for each other and the guide managing group dynamics efficiently.</li>
+                        <li><strong>Group Learning:</strong> The guide can facilitate group discussions, making the educational component
+                            interactive with different viewpoints and questions.</li>
+                        <li><strong>Photography Support:</strong> More people mean more opportunities for group photos and assistance with
+                            capturing individual moments, with someone always available to take pictures.</li>
+                        <li><strong>Environmental Education:</strong> Larger groups can be more impactful in spreading awareness about
+                            conservation, as each member can become an ambassador for gorilla protection.</li>
+                        <li><strong>Flexibility in Activities:</strong> With more participants, activities can be diversified; some might focus
+                            on photography, others on learning, while some engage in quiet observation, providing a varied experience.</li>
+                        <li><strong>Community Building:</strong> These treks can foster a sense of community among participants, especially if
+                            they're part of an organized group or club, strengthening bonds through shared adventure.</li>
+                        <li><strong>Conservation Contribution:</strong> While the environmental impact is slightly higher, the collective
+                            contribution to conservation through trekking fees remains substantial, supporting broader conservation efforts.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="footer_address">
+            Address: Plot 21 Malcom X Avenue, Kololo, Kampala<br>
+            Hours: Mon - Fri 8am to 5pm<br>
+            Phone: 0753 503035<br>
+        </div>
+        <div class="footer_class">
+            WDD231<br>
+            BYU Pathway Worldwide<br>
+            <p></p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+
+</html>

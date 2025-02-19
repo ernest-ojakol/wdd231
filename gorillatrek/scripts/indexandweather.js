@@ -2,12 +2,12 @@
 async function loadEvents() {
     console.log("loading events");
     try {
-        const response = await fetch('./data/events.json');
+        const response = await fetch('./data/awareness.json');
         const eventsData = await response.json();
 
         const eventsCard = document.querySelector('.events_card');
 
-        let eventListHTML = '<h2>Conservation Awareness Events</h2>';
+        let eventListHTML = '';
 
         eventsData.events.forEach(event => {
             eventListHTML += `
@@ -33,10 +33,13 @@ loadEvents();
 const time = new Date();
 const day = time.getDay();
 const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const apikey = "f12a2fa0a6a6f9fddbc14d416515b70b";
+const latitude_ = -1.0335053300644959;
+const longitude_ = 29.69321913833942;
 
 document.addEventListener("DOMContentLoaded", () => {
     //const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=metric&appid=${myKey}`;
-    const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=0.316994&lon=32.6464&units=metric&appid=f12a2fa0a6a6f9fddbc14d416515b70b'
+    const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude_}&lon=${longitude_}&units=metric&appid=${apikey}`
     async function apiFetch() {
         try {
             const response = await fetch(urlWeather);
@@ -60,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         eventMainBox.innerHTML = `
             <div class="current-weather">
-                <h2>The current Weather in: <span id="city-name">${data.name}</span></h2>
+                <h2>The current Weather in: <span id="city-name">${data.name}</span>. Bwindi, the Home of Gorillas</h2>
                 <h4>${weekdays[day]}</h4>
                 <div class="weather-content"></div>
                 <p>Temperature: <span id="current-temp">${parseFloat(data.main.temp).toFixed(0)}°C</span></p>
@@ -236,6 +239,15 @@ function displayCompanies(viewType) {
         container.classList.remove("list-view");
     }
 }
+
+// Toggle view function
+let isGridView = false;
+const toggleButton = document.getElementById("toggleButton");
+toggleButton.addEventListener("click", () => {
+    isGridView = !isGridView;
+    displayCompanies(isGridView ? 'grid' : 'list');  // Pass the current view type
+    toggleButton.textContent = isGridView ? "Switch to List View" : "Switch to Grid View";
+});
 
 // Initialize the page with the default view (list)
 async function initializePage() {

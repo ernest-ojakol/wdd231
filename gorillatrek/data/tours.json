@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bwindi Gorilla Safaris",
+    "address": "Bwindi Impenetrable National Park, Uganda",
+    "phone": "+256 772 123456",
+    "website": "http://www.bwindigorillasafaris.com",
+    "image": "images/tour1.jpg",
+    "costing": 1500,
+    "additionalInfo": "Great trek in the mountains"
+  },
+  {
+    "name": "Volcanoes Trekking Adventures",
+    "address": "Volcanoes National Park, Rwanda",
+    "phone": "+250 788 987654",
+    "website": "http://www.volcanoestreks.com",
+    "image": "images/tour2.jpg",
+    "costing": 1200,
+    "additionalInfo": "Great trek in the mountains"
+  },
+  {
+    "name": "Virunga Gorilla Expeditions",
+    "address": "Virunga National Park, DR Congo",
+    "phone": "+243 81 1234567",
+    "website": "http://www.virungagorillaexpeditions.com",
+    "image": "images/tour3.jpg",
+    "costing": 1800,
+    "additionalInfo": "Great trek in the mountains"
+  },
+  {
+    "name": "Mgahinga Gorilla Tours",
+    "address": "Mgahinga Gorilla National Park, Uganda",
+    "phone": "+256 701 765432",
+    "website": "http://www.mgahingagorillatours.com",
+    "image": "images/tour4.webp",
+    "costing": 1100,
+    "additionalInfo": "Great trek in the mountains"
+  },
+  {
+    "name": "Rwanda Gorilla Treks",
+    "address": "Kigali, with operations in Volcanoes National Park, Rwanda",
+    "phone": "+250 722 345678",
+    "website": "http://www.rwandagorillatreks.com",
+    "image": "images/tour5.jpg",
+    "costing": 2000,
+    "additionalInfo": "Great trek in the mountains"
+  },
+  {
+    "name": "Gorilla Highlands Safaris",
+    "address": "Kisoro, near Bwindi Impenetrable National Park, Uganda",
+    "phone": "+256 752 876543",
+    "website": "http://www.gorillahighlandssafaris.com",
+    "image": "images/tour6.jpg",
+    "costing": 800,
+    "additionalInfo": "Great trek in the mountains"
+  },
+  {
+    "name": "Gorilla Trackers Uganda",
+    "address": "Entebbe, with trekking in Bwindi and Mgahinga, Uganda",
+    "phone": "+256 771 567890",
+    "website": "http://www.gorillatrackersuganda.com",
+    "image": "images/tour7.jpg",
+    "costing": 1000,
+    "additionalInfo": "Great trek in the mountains"
+  }
+]

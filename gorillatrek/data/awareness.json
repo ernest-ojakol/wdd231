@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "title": "Gorilla Trekking Orientation Day",
+      "date": "2025-02-10",
+      "time": "09:00 AM",
+      "location": "Bwindi Impenetrable National Park Visitor Center, Uganda"
+    },
+    {
+      "title": "Annual Gorilla Conservation Gala",
+      "date": "2025-03-20",
+      "time": "06:30 PM",
+      "location": "Volcanoes National Park Lodge, Rwanda"
+    },
+    {
+      "title": "Wildlife Photography Workshop",
+      "date": "2025-04-12",
+      "time": "02:00 PM",
+      "location": "Virunga National Park Headquarters, DR Congo"
+    },
+    {
+      "title": "Community Conservation Fair",
+      "date": "2025-05-08",
+      "time": "10:00 AM",
+      "location": "Musanze Community Grounds, Rwanda"
+    },
+    {
+      "title": "Gorilla Trekking Fitness Bootcamp",
+      "date": "2025-06-15",
+      "time": "07:00 AM",
+      "location": "Mgahinga Gorilla National Park Base, Uganda"
+    },
+    {
+      "title": "Eco-Tourism Symposium",
+      "date": "2025-07-22",
+      "time": "01:00 PM",
+      "location": "Kigali Convention Center, Rwanda"
+    }
+  ]
+}
